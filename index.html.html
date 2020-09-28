@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #f5e507ef;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+        table, tr, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          background-color: #000000;
+          color: #f8e600;
+
+        }
+        table {
+         border-collapse: collapse;
+         width: 100%;
+         }
+
+         td {
+            height: 100px;
+         }
+         .vr {
+    width:10px;
+    background-color:#f8e600;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:150px;
+}
+        .mySlides {display:none;}
+        * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #f8e600;
+  background-color: #f8e600;
+  width: 300px;
+  height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f8e600;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #f8e600;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: center;
+  padding: 0px 12px;
+  border: 1px solid #f8e600;
+  width: 100%;
+  border-left: none;
+  height: 100%;
+  display: none;
+  background:#000000;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bg {
+  /* The image used */
+  background-image: url("battleropesguy.jpg");
+
+  /* Full height */
+  height:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        </style>
+     </head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <body>
+            <div class="navbar">
+               <a class="active" href="images//Gold's Gym.html" target="_blank"><i class="fa fa-fw fa-home"></i> Home</a>
+                 <a href="images//Get_Started.html" target="_blank"><i class="fa fa-fw fa-search"></i> Get Started</a>
+                 <a href="images//About_us.html" target="_blank"><i class="fa fa-fw fa-user"></i> About Us</a>
+
+                 <a href="images//Contact_us.html" target="_blank"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+             </div>
+            <table class="bg" style="width:100%;height:100%;">
+                 <tr>
+                    <div class="bg">
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png" alt="" height=100 width=100></img></td>
+                 </tr>
+                 <tr>
+                    <td colspan="100%"><img src="images//change-is-strong-sups-dsk.png" alt="" class="center"></img></td></div>
+                 </tr>
+                <tr>
+                   <td>
+
+                  <div class="w3-content w3-section" style="max-width:900px;image-orientation: unset;">
+                     <img class="mySlides w3-animate-fading" src="images//functional training.png" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//Facility Image 2_1.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//925748873s.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//gym8.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//925751606s.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//2019-03-08.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//gf_15521122443.jpg" style="width:100%">
+                     <img class="mySlides w3-animate-fading" src="images//gold-gym.jpg" style="width:100%">
+
+                     <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                          }
+                          myIndex++;
+                          if (myIndex > x.length) {myIndex = 1}
+                          x[myIndex-1].style.display = "block";
+                          setTimeout(carousel, 5000);
+                        }
+                        </script>
+                     </td>
+                 </tr>
+             </table>
+            <table>
+               <tr>
+                  <td>
+                     <div class="tab">
+                        <button class="tablinks" onmouseover="openCity(event, 'Monthly')">Monthly ( Starts from Rs.4500)</button>
+                        <button class="tablinks" onmouseover="openCity(event, 'Quarterly')">Quarterly ( Starts from Rs.7999 )</button>
+                        <button class="tablinks" onmouseover="openCity(event, 'Half Yearly')">Half Yearly ( Starts from  Rs.13500 )</button>
+                        <button style="column-span: inherit;" class="tablinks" onmouseover="openCity(event, 'Annually')">Annually ( Starts from  Rs.18000 )</button>
+                      </div>
+                  </td>
+                  <td >
+                      <div id="Monthly" class="tabcontent">
+                        <h7>Gym Membership</h3>
+                           <p style="size: 1000px;">Rs.4500</p>
+                           <hr>
+                           <h7>Gym Membership + Group Activities            </h7>
+                              <p style="size: 1000px;">Rs.4900</p>
+                              <hr>
+                        <h7>Gym Membership + Spa</h7>
+                        <p style="size: 1000px;">Rs.5550</p>
+                        <hr>
+                        <h7>30 Days Sessions</h7>
+                           <p style="size: 1000px;">Rs.6000</p>
+                      </div>
+
+                      <div id="Quarterly" class="tabcontent">
+                        <h7>Gym Membership</h7>
+                           <p style="size: 1000px;">Rs.10500                 </p>
+                           <hr>
+                        <h7>Gym Membership + Group Activities</h7>
+                        <p>Rs. 7999</p>
+                        <hr>
+                        <h7>Gym Membership + Spa</h7>
+                           <p style="size: 1000px;">Rs.8500</p>
+                           <hr>
+                        <h7>90 Days Sessions</h7>
+                           <p style="size: 1000px;">Rs.11800</p>
+                      </div>
+
+                      <div id="Half Yearly" class="tabcontent">
+                        <h7>Gym Membership</h7>
+                           <p style="size: 1000px;">Rs.13500                  </p>
+                           <hr>
+                        <h7>Gym Membership + Group Activities</h7>
+                        <p>Rs. 17000</p>
+                        <hr>
+                        <h7>Gym Membership + Spa</h7>
+                           <p style="size: 1000px;">Rs.15800</p>
+                           <hr>
+                        <h7>180 Days Sessions</h7>
+                           <p style="size: 1000px;">Rs.19700</p>
+                      </div>
+
+                      <div id="Annually" class="tabcontent">
+
+                        <h7>BOGO Reward Offer - Gym membership For New Member</h7>
+                        <p>Rs. 18000</p>
+                        <hr>
+                        <h7>BOGO Reward Offer - Gym membership For Renewal Member</h7>
+                        <p>Rs. 18000</p>
+                        <hr>
+                        <h7>Gym Membership + Group Activities</h7>
+                        <p>Rs. 21600</p>
+                        <hr>
+                        <h7>Gym Membership + Group Activities</h7>
+                        <p>Rs. 36000</p>
+
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                      <script>
+                      function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                          tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                          tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                      }
+                      </script>
+                  </td>
+                  <td>
+                     <hr width="70%" color="#f8e600">
+                     <h1>Gallery</h1>
+                     <ul>
+                     <li><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x39f6a3336b2c1d55%3A0xa5e6e1cc015bd39f!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNlwADD1oJwE0e35AmTb5B3Ec3h7ftPo39U6ezr%3Dw266-h200-k-no!5sgold%20gym%20photo%20gallery%20-%20Google%20Search&imagekey=!1e10!2sAF1QipM7fAYzrehxxqMO8pbkubg6TqFCnp3hf-UEdIc8&sa=X&ved=2ahUKEwjXjpu5nafoAhUTOisKHTU_BokQoiowFXoECBsQBg">Dhanbad</a></li>
+                     <li><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x390ce5b12910fa35%3A0x2965991587c3e831!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPIhbwU61CTTzmBk5g9vQyd0_intGZbAjh8YG9X%3Dw150-h200-k-no!5sgold%20gym%20noida%20photo%20-%20Google%20Search!15sCAQ&imagekey=!1e10!2sAF1QipPIhbwU61CTTzmBk5g9vQyd0_intGZbAjh8YG9X&sa=X&ved=2ahUKEwjXovDGnqfoAhXUR30KHcEmC2YQoiowE3oECBsQBg">Noida</a></li>
+                        <li><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x3be7b934b31f26e9%3A0x50403dabc7469ca1!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMp_3dTXTUM9QQwI-k_xKqxn9L-tOcL-EZw_r3s%3Dw107-h108-n-k-no!5sgold%20gym%20mumbai%20-%20Google%20Search!15sCAQ&imagekey=!1e10!2sAF1QipMp_3dTXTUM9QQwI-k_xKqxn9L-tOcL-EZw_r3s">Mumbai</a></li>
+                           <li><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x3bae0dfe794a000d%3A0xd80644cfceac0af9!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMhS02apyw82bHP0nRF_fYmPg38je5Hqa_afQV7%3Dw107-h108-n-k-no!5sgold%20gym%20bangalore%20-%20Google%20Search!15sCAQ&imagekey=!1e10!2sAF1QipMhS02apyw82bHP0nRF_fYmPg38je5Hqa_afQV7">Bangalore</a></li>
+                              <li><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x3a02756d2a879771:0x3dad24e142ec9df1!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipMC6rEVfmyoTnSauaJVMZbjMkEmJVktlgZyS7iR%3Dw107-h108-n-k-no!5sgold+gym+kolkata+-+Google+Search&imagekey=!1e10!2sAF1QipMC6rEVfmyoTnSauaJVMZbjMkEmJVktlgZyS7iR">kolkata</a></li>
+                  </ul>
+
+                  <hr width="70%" color="#f8e600">
+                     <h1>FAQ's</h1>
+                     <ul>
+                        <li><a href="https://www.goldsgym.co.uk/frequently-asked-questions/">What makes Gold’s Gym different?</a></li>
+
+                        <li><a href="https://www.goldsgym.co.uk/frequently-asked-questions/">What happens if I lose my membership card?</a></li>
+
+                        <li><a href="https://www.goldsgym.co.uk/frequently-asked-questions/">Can I take a break in my membership?</a></li>
+                        <li><a href="https://www.goldsgym.co.uk/frequently-asked-questions/">How can I cancel my membership?</a></li>
+                        <li><a href="https://www.goldsgym.co.uk/frequently-asked-questions/">What is the best way to join a Gold’s Gym Club?</a></li>
+                     </ul>
+                  </td>
+               </tr>
+                  </table>
+        </body>
+</html>

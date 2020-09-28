@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #f5e507ef;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+        table, tr, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          background-color: #000000;
+          color: #f8e600;
+
+        }
+        table {
+         border-collapse: collapse;
+         width: 100%;
+         }
+
+         td {
+            height: 100px;
+         }
+         .vr {
+    width:10px;
+    background-color:#f8e600;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:150px;
+}
+        .mySlides {display:none;}
+        * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #f8e600;
+  background-color: #f8e600;
+  width: 300px;
+  height: 100%;
+}
+
+hr{
+            width: 100%;
+            height: 50px;
+        }
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #f8e600;
+}
+.tab button.active {
+  background-color: #f8e600;
+}
+.tabcontent {
+  float: center;
+  padding: 0px 12px;
+  border: 1px solid #f8e600;
+  width: 100%;
+  border-left: none;
+  height: 100%;
+  display: none;
+  background:#000000;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bg {
+  background-image: url("34-341682_fitness-gym-girl-wallpaper-hd-2016-in-fitness.jpg");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: black;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f8e600;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #f8e600;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f8e600;
+  text-align: center;
+}
+        </style>
+     </head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <body>
+            <table class="bg" style="width:100%;height:100%;">
+              <div class="navbar">
+                <a class="active" href="../index.html.html" target="_blank"><i class="fa fa-fw fa-home"></i> Home</a> 
+                  <a href="Get_Started.html" target="_blank"><i class="fa fa-fw fa-search"></i> Get Started</a>
+                  <a href="About_us.html" target="_blank"><i class="fa fa-fw fa-user"></i> About Us</a>
+
+                  <a href="Contact_us.html" target="_blank"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+              </div>
+              <div class="bg">
+                <img src="1200px-Gold's_Gym_logo.svg.png" alt="" height=300 width=300></img>
+                    </div>
+                    <table>
+                      <tr>
+                        <td>
+                          <h1>CONTACT US NOW!</h1>
+                          <h3>WE ARE ALWAYS READY TO HEAR FROM YOU</h3>
+                          <hr>
+                          <p>OUR TEAM IS ALWAYS READY TO HEAR FROM YOU. </p>
+                          <p>WE MAKE IT A POINT TO RESPOND WITHIN 24 HOURS ON WEEKDAYS AND 48 HOURS ON WEEKENDS.</p>
+                          <hr>
+                          <h4>Head Office:202-203, Trade Avenue, 2nd Floor, </h4>
+                          <h4>Suren Road, Andheri (E), Off Western Express Highway, Mumbai – 400 093</h4>
+                          <hr>
+                          <h4>Phone: +91 89 76 83 48 31 / 32</h4>
+                          <hr>
+                          <h4>Email: WeCare@GoldsGym.in</h4>
+                        </td>
+
+                        <td>
+                          <form action="/action_page.php">
+                            <div class="container">
+                              <h1>Contact Us</h1>
+                              <hr>
+
+                              <label for="email"><b>Name</b></label>
+                              <input type="text" placeholder="Enter Name" name="email" required>
+
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required>
+
+                              <label for="email"><b>Contact Number</b></label>
+                              <input type="text" placeholder="Contact" name="email" required>
+
+                              <form>
+                                Description : <br />
+                                <textarea rows = "5" cols = "80" name = "description">
+                                   Any Message (Optional)
+                                </textarea>
+                             </form>
+                              <hr>
+
+
+                              <button type="submit" class="registerbtn">SUBMIT</button>
+                            </div>
+
+                            </div>
+                          </form>
+                        </td>
+                      </tr>
+                    </table>
+                    </table>
+                    </body>
+                    </html>

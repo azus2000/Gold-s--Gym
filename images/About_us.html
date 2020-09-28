@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           body {font-family: Arial, Helvetica, sans-serif;}
+
+              .navbar {
+                width: 100%;
+                background-color: #000000;
+                overflow: auto;
+              }
+
+              * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+              .navbar a {
+                float: right;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+              }
+
+              .navbar a:hover {
+                background-color: #000;
+              }
+
+              .active {
+                background-color: #f5e507ef;
+              }
+
+              @media screen and (max-width: 500px) {
+                .navbar a {
+                  float: none;
+                  display: block;
+                }
+              }
+
+        table, tr, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          background-color: #000000;
+          color: #f8e600;
+
+        }
+        table {
+         border-collapse: collapse;
+         width: 100%;
+         }
+
+         td {
+            height: 100px;
+         }
+         .vr {
+    width:10px;
+    background-color:#f8e600;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:150px;
+}
+        .mySlides {display:none;}
+        * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #f8e600;
+  background-color: #f8e600;
+  width: 300px;
+  height: 100%;
+}
+
+hr{
+            width: 100%;
+            height: 50px;
+        }
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #f8e600;
+}
+.tab button.active {
+  background-color: #f8e600;
+}
+.tabcontent {
+  float: center;
+  padding: 0px 12px;
+  border: 1px solid #f8e600;
+  width: 100%;
+  border-left: none;
+  height: 100%;
+  display: none;
+  background:#000000;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bg {
+  background-image: url("834255.jpg");
+  height:100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.back{
+  background-color: black;
+}
+        </style>
+     </head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <body style="background-color: black;">
+          <div class="navbar">
+            <a class="active" href="../index.html.html" target="_blank"><i class="fa fa-fw fa-home"></i> Home</a> 
+              <a href="Get_Started.html" target="_blank"><i class="fa fa-fw fa-search"></i> Get Started</a>
+              <a href="About_us.html" target="_blank"><i class="fa fa-fw fa-user"></i> About Us</a>
+
+              <a href="Contact_us.html" target="_blank"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+          </div>
+
+
+          <div class="bg">
+            <img src="1200px-Gold's_Gym_logo.svg.png" alt="" height=300 width=300></img>
+                </div>
+                <div class="back">
+
+                <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="2016-07-24-1469388986-2091389-frontofgoldsgym-thumb.jpg" style="width:100%;">
+
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="63426cf1911200b5f8331aa7a7e56011.jpg" style="width:100%;">
+
+                  </div>
+
+
+                  </div>
+                  <br>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <script>
+                  var slideIndex = 0;
+                  showSlides();
+
+                  function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000);
+                  }
+                  </script>
+                  </div>
+                  <h1 style="background-color: black;font: size 50px;color: #f8e600;text-align: center;"> ABOUT GOLD’S GYM</h1>
+                  <table>
+                    <tr>
+                      <td style="text-align: center;">
+                        <h6> India chapter of Gold’s Gym started in 2002, when the first Gold’s Gym India branch was set up in Mumbai. In the next few years this number grew, and today Gold’s Gym has cut out for itself 120 gyms in India with another 5 under construction and ready to start in this year.</h6>
+
+                        <h6> With multiple awards for excellence under its belt including 2 awards from the Lions Club for the “Best Fitness Chain”, An award from the Images Beauty & wellness for the Most admired fitness chain of the year”, an award from Franchise India, 8 awards from Gold’s Gym International making  it a very eventful 14 years in the growth of the business. Gold’s Gym India has bagged the most prestigious Economic Times ET award for ‘Excellence in Marketing 2013’ & ‘Excellence in Customer Service 2014’.</h6>
+                      </td>
+                      <td style="text-align: center;">
+                        <h6>  Gold’s Gym India is acknowledged for its unrivalled success in providing the finest equipment and fitness knowledge available to help its members achieve their individual potential. It follows a globally proven fitness training module with state-of-the-art infrastructure and delivery methodology and continuous up gradation through training programs. With certified trainers and nutritional counseling, Gold’s Gym provides a comprehensive approach to the health and well-being of its member.</h6>
+
+                        <h6>Catering to famous celebrities including film & television personalities, sportspersons & Corporate honchos, Gold’s Gym lives up to its reputation to give results. Whether your goal is to burn fat, tone or add muscle, build strength, increase flexibility or improve your cardiovascular health, only Gold’s Gym has the atmosphere and experience you need.</h6>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                        <td><img src="1200px-Gold's_Gym_logo.svg.png" alt="" height=500 width=500></img></td>
+                        <td><img src="change-is-strong-sups-dsk.png" alt="" height=500 width=850></img></td>
+                    </tr>
+                </table>
+                </body>
+                </html>
